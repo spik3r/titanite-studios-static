@@ -108,6 +108,7 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	color: #fff;
+	background-color: #414a4f;
 	padding: 35px 100px 0;
 }
 
@@ -355,6 +356,13 @@ header nav li:last-child{
 }
 
 
+
+/*---------------------
+ 	Trading Baiscs Section
+---------------------*/
+.trading-basics {
+text-align: left;
+}
 
 /*---------------------
  	Contact Section
