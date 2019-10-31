@@ -292,6 +292,9 @@ header nav li:last-child{
     margin: 0;
 }
 
+.features-link {
+	text-decoration: underline;
+}
 @media (max-width: 1000px){
 
 	.features .grid li{
