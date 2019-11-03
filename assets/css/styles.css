@@ -19,7 +19,7 @@ ul, nav{
 }
 
 a{
-	text-decoration: none;
+	/*text-decoration: none;*/
 	color: inherit;
 	cursor: pointer;
 
@@ -302,7 +302,7 @@ header nav li:last-child{
 }
 
 .features-link {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 @media (max-width: 1000px){
 
@@ -484,10 +484,13 @@ footer p a{
 .color-primary-2 { color: #69A78C }
 .color-primary-3 { color: #3D6353 }
 .color-primary-4 { color: #3B403E }
-.color-bg-1 { background-color: #9bff95
+
+.color-bg-1 { background-color: #277553
 }
-.color-bg-2 { background-color: #c6c6c6
+.color-bg-2 { background-color: #69A78C
 }
+.color-bg-3 { background-color: #3D6353 }
+.color-bg-4 { background-color: #3B403E }
 
 .wrapper {
 	display: flex;
@@ -518,8 +521,11 @@ footer p a{
 .bg {
 	/*background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30'></svg>")  no-repeat;*/
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 16px;
 	width: 90%;
 	background-image:  url("../img/bg-tick.svg");
 	background-position: center;
@@ -529,18 +535,49 @@ footer p a{
 }
 
 .bg-gradient {
-	background-image: linear-gradient(rgba(155,255,149,0.75), rgba(198,198,198,0.75));
+	background-image: linear-gradient(rgba(39,117,83,0.5), rgba(59,64,62,0.5));
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
 #example1 {
-	background-image:  url("../img/bg-tick.svg"), linear-gradient(rgba(155,255,149,0.75), rgba(198,198,198,0.75)) ;
+	background-image:  url("../img/bg-tick.svg"), linear-gradient(rgba(155,255,149,0.5), rgba(198,198,198,0.5)) ;
 	background-position: center;
 	background-repeat: no-repeat, repeat;
 	background-attachment: fixed;
 	z-index: 1000;
 	padding: 15px;
 	width: 80%;
+}
+
+/*card*/
+
+.cards {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.card {
+	/* Add shadows to create the "card" effect */
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15);
+	width: 192px;
+	height: 192px;
+	border-radius: 50%;
+	border: 1px solid #277553;
+	transition: 0.3s;
+	color: white;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+/* Add some padding inside the card container */
+.container {
+	padding: 2px 16px;
 }
