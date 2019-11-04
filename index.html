@@ -6,83 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Titanite Studios</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 
-<body>
+<body style="margin: 0">
 
-<header>
-    <img src="assets/img/logo.svg" alt="Logo" height="96px" width="96px"/>
-<!--    <h1 class="title color-primary-1">Titanite Studios</h1>-->
+<header class="w-100 sans-serif">
+  <div class="header-container">
+    <img src="assets/img/logo.svg" alt="Logo" id="site-logo"/>
     <nav>
         <li><a href="#">Home</a></li>
         <li><a href="#">Indicators</a></li>
         <li><a href="#">Guides</a></li>
         <li><a href="#">Contacts</a></li>
     </nav>
+  </div>
 </header>
 <div class="wrapper bg-gradient">
-    <!--    color-bg-1-->
-    <div class="hero">
-        <!--        <div class="background-image" style="background-image: url(assets/img/bg-tick.svg);"></div>-->
-        <div class="bg-image">
-            <h1 class="color-primary-4">Titanite Studios</h1>
-            <p class="color-primary-1">Trading Tips, Indicators & Strategies</p>
+    <div class="hero w-100"> <!--relative-->
+        <div class="background-image w-100"></div> <!--absolute-->
+        <div class="hero-content"> <!--absolute-->
+            <h1 id="site-title"><span class="titanite-text">Titanite</span></br><span class="studios-text">Studios</span></h1>
+            <h3>Trading Tips, Indicators & Strategies</h3>
         </div>
 
     </div>
-    <div class="hero-line"></div>
+
+    <div class="hero-bar w-100"></div>
 
     <div class="bg">
+        <section class="cards content-container">
+            <div class="card color-bg-1">
+                <div class="container">
+                    <p><b>MARS</b></p>
+                    <p><a href="https://www.tradingview.com/script/ZSSGr9Ce-Moving-Averages-21-55-200-with-Parabolic-SAR-and-Support-Re/">Get it here</a></p>
+                </div>
+            </div>
+            <div class="card color-bg-2">
+                <div class="container">
+                    <p><b>Trend Indicator</b></p>
+                    <p><a href="https://www.tradingview.com/script/aRVlRkT0-Trend-Indicator/">Get it here</a></p>
+                </div>
+            </div>
+            <div class="card color-bg-3">
+                <div class="container">
+                    <p><b>Trend Following</b></p>
+                    <p><a href="https://www.tradingview.com/script/1bL6wkEP-Simple-Moving-Averages-21-50-100-200/">Get it here</a></p>
+                </div>
+            </div>
+        </section>
 
-
-        <!--        <div id="example1">-->
-        <!--            <h1>Lorem Ipsum Dolor</h1>-->
-        <!--&lt;!&ndash;            <img id="Image" src="assets/css/bg-tick.svg" />&ndash;&gt;-->
-        <!--            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
-        <!--            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>-->
-        <!--        </div>-->
-        <!--        -&#45;&#45;&#45;&#45;-->
-        <!--        <h3 class="title">Trading Tips, Indicators and Strategies</h3>-->
-        <!--        <p>Watch this space...</p>-->
-
-        <!--                <a href="https://www.tradingview.com/script/aRVlRkT0-Trend-Indicator/" class="btn">Get the-->
-        <!--                    Trend Indicator here</a>-->
-        <!--                <br/>-->
-        <!--                <a href="https://www.tradingview.com/script/ZSSGr9Ce-Moving-Averages-21-55-200-with-Parabolic-SAR-and-Support-Re/"-->
-        <!--                   class="btn">Get the MARS Indicator here</a>-->
-        <!--        <br/>-->
-        <!--                <a href="https://www.tradingview.com/script/1bL6wkEP-Simple-Moving-Averages-21-50-100-200/" class="btn">Get the-->
-        <!--                    Trend-Following Strategy here</a>-->
-        <!--    </section>-->
-
-<!--        &lt;!&ndash;    trading-basics&ndash;&gt; color-bg-2-->
-                <section class="cards content-container">
-                    <div class="card color-bg-1">
-                        <div class="container">
-                            <p><b>MARS</b></p>
-                            <p><a href="https://www.tradingview.com/script/ZSSGr9Ce-Moving-Averages-21-55-200-with-Parabolic-SAR-and-Support-Re/">Get it here.</a></p>
-                        </div>
-                    </div>
-                    <div class="card color-bg-2">
-                        <div class="container">
-                            <p><b>Trend Indicator</b></p>
-                            <p> <a href="https://www.tradingview.com/script/aRVlRkT0-Trend-Indicator/" >Get it here</a></p>
-                        </div>
-                    </div>
-                    <div class="card color-bg-3">
-                        <div class="container">
-                            <p><b>Trend Following</b></p>
-                            <p><a href="https://www.tradingview.com/script/1bL6wkEP-Simple-Moving-Averages-21-50-100-200/">Get it here.</a></p>
-                        </div>
-                    </div>
-                </section>
-
-        <section class=" content-container">
+        <section class="content-container">
             <h3 class="title">Technical Analysis Basics:</h3>
             <h4>What is TA:</h4>
             <p>Stock markets & Crypto might seem like they move randomly but with the help of Technical Analysis or TA
@@ -189,8 +166,7 @@
             </p>
         </section>
 
-        <!--&lt;!&ndash;    features&ndash;&gt; color-bg-1-->
-        <section class="features  content-container">
+        <section class="features content-container">
             <h3 class="title">Features and services</h3>
             <p>Watch this space... Exciting things coming soon!</p>
             <hr>
