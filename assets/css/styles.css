@@ -3,7 +3,6 @@
 /*-------------
  	General
 -------------*/
-
 :root {
 	--primary-color: #277553;
 	--primary-shade-1: #3D6353;
@@ -13,6 +12,8 @@
 	--hero-height: 320px;
 	--nav-height: 96px;
 	--logo-height: 96px;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 @media (max-width: 720px) {
